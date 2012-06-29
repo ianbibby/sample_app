@@ -10,6 +10,7 @@ gem 'pg', '0.12.2'
 group :development, :test do
 	gem 'rspec-rails', '2.10.0'
 	gem 'guard-rspec', '0.5.5'
+  gem 'bootstrap-sass', '2.0.0'
 end
 
 # Gems used only for assets and not required
