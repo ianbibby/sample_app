@@ -7,7 +7,8 @@ class UsersController < ApplicationController
   	@user = User.new(params[:user])
   	if @user.save
   		flash[:success] = "Thanks for signing up!"
-  		redirect_to user_path(@user)
+  		sign_in @user
+      redirect_to @user
   	else
   		render 'new'
 	  end
